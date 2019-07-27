@@ -75,7 +75,7 @@ prettier_dm.setList({
                     configuration.parser = "html";
                     graviton.getCurrentEditor().editor.setValue(prettier.format(editor.getValue(), configuration));
                     return;
-                case"markdown":
+                case"md":
                     configuration.parser = "markdown";
                     graviton.getCurrentEditor().editor.setValue(prettier.format(editor.getValue(), configuration));
                     return;
