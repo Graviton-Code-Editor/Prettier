@@ -3,7 +3,7 @@
   "description": "Code formatter using Prettier's API.",
   "author": "Marc Espín Sanz",
   "gitRepositoryURL": "",
-  "version": "0.0.2",
+  "version": "0.0.21",
   "folder": "Prettier",
   "main": "main.js",
   "dependencies": {
