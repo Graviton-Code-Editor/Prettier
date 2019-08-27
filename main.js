@@ -75,7 +75,7 @@ prettier_instance.getData(function(data) {
             return
           }
 
-          switch (getFormat(path.basename(graviton.getCurrentFile().path))) {
+          switch (getFormat(path.basename(graviton.getCurrentFile().path)).format) {
             case "js":
               configuration.parser = "babel"
               graviton
