@@ -64,14 +64,14 @@ prettier_instance.getData(function(data) {
       Format: {
         click: function() {
           if (graviton.getCurrentEditor() == null) {
-            new Notification("Issue", "Open a file before formatting.")
+            new Notification({title:"Issue", content: "Open a file before formatting."})
             return
           }
           if (
             graviton.getCurrentEditor().path == null ||
             graviton.getCurrentEditor().type != "text"
           ) {
-            new Notification("Issue", "Cannot format the current file.")
+            new Notification({title:"Issue",content: "Cannot format the current file."})
             return
           }
 
@@ -109,10 +109,10 @@ prettier_instance.getData(function(data) {
                 )
               return
             default:
-              new Notification(
-                "Issue",
-                "The current language is not supported."
-              )
+              new Notification({
+                title:"Issue",
+                content:"The current language is not supported."
+              })
           }
         }
       }
