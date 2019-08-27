@@ -44,10 +44,10 @@ prettier_instance.getData(function(data) {
                 document.getElementById("textarea_config").value
               )
             } catch {
-              new Notification(
-                "Prettier",
-                "There were an error while parsing the configuration."
-              )
+              new Notification({
+                title:'Prettier',
+                content:'There were an error while parsing the configuration.'
+              })
             }
 
             prettier_instance.saveData(configuration)
