@@ -1,6 +1,6 @@
 const prettier = require("prettier")
 
-const default_config = { semi: false }
+const default_config = { semi: false , useTabs:true }
 
 const prettier_instance = new Plugin({
   name: "Prettier"
@@ -31,10 +31,10 @@ prettier_instance.getData(function(data) {
                         <textarea id=textarea_config>${JSON.stringify(
                           configuration
                         )}</textarea>
-                    </div> 
+                    </div>
                     <button class=button1 id=save_config>Save</button1>
                     <button class=button1 id=restart_config>Restart</button1>
-                </div> 
+                </div>
                 `
           })
           config_window.launch()
