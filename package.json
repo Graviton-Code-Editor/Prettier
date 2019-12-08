@@ -2,7 +2,7 @@
   "name": "Prettier",
   "description": "Code formatter using Prettier's API.",
   "author": "Marc Espín Sanz",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "main": "main.js",
   "dependencies": {
     "prettier": "^1.18.2"

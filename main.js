@@ -25,15 +25,15 @@ prettier_instance.getData(function(data) {
           const config_window = new Window({
             id: Math.random(),
             content: `
-                <div class=section1>
+                <div class="section1">
                     <h1>Prettier<h1>
-                    <div class=section1>
-                        <textarea id=textarea_config>${JSON.stringify(
+                    <div class="section1">
+                        <textarea id="textarea_config">${JSON.stringify(
                           configuration
                         )}</textarea>
                     </div>
-                    <button class=button1 id=save_config>Save</button1>
-                    <button class=button1 id=restart_config>Restart</button1>
+                    <button class="button1" id="save_config">Save</button1>
+                    <button class="button1" id="restart_config">Restart</button1>
                 </div>
                 `
           })
