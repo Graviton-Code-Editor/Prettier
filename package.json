@@ -1,10 +1,19 @@
 {
-  "name": "Prettier",
-  "description": "Code formatter using Prettier's API.",
-  "author": "Marc Espín Sanz",
-  "version": "0.0.23",
-  "main": "main.js",
-  "dependencies": {
-    "prettier": "^1.18.2"
-  }
+	"name": "Prettier",
+	"description": "Code formatter using Prettier's API.",
+	"author": "Marc Espín Sanz",
+	"version": "0.0.23",
+	"main": "index.js",
+	"mainDev": "dist/index.js",
+	"mainSrc": "src/index.ts",
+	"scripts":{
+		"watch":"gvsdk --project . --target plugin --mode dev",
+		"build":"gvsdk --project . --target plugin --mode release"
+	},
+	"dependencies": {
+		"prettier": "^1.18.2"
+	},
+	"devDependencies": {
+		"@gveditor/sdk": "^0.4.1"
+	}
 }
